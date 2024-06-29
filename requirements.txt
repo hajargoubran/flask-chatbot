@@ -1,2 +1,2 @@
-Python==3.7
-Flask==2.2
+Python==3.7.0
+Flask==2.2.0
