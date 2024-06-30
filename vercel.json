@@ -1,8 +1,4 @@
 {
-  "version": 2,
-  "builds" :[
-    {"source": "chat.py", "use": "@vercel/python"}
-  ],
   
   "routes": [
     { "source": "/(.*)", "destination": "/api/chat" }
