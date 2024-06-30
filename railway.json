@@ -12,7 +12,7 @@
     "runtime": "1200",
     "numReplicas": 1,
     "startCommand": "npm run chat.py",
-    "sleepApplication": false,
+    "sleepApplication": true,
     "restartPolicyType": "ON_FAILURE",
     "restartPolicyMaxRetries": 10
   }
