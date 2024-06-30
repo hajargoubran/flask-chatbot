@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask App</title>
+</head>
+<body>
+    <h1>Welcome!</h1>
+    <form action="/handle_queries" method="post">
+        <h2>Select a Query</h2>
+        {% for i, query in enumerate(queries) %}
+            <label>
+                <input type="radio" name="choice" value="{{ i+1 }}"> {{ query }}
+            </label><br>
+        {% endfor %}
+        <button type="submit">Submit</button>
+    </form>
+    <form action="/handle_complaint" method="post">
+        <h2>File a Complaint</h2>
+        <input type="text" name="name" placeholder="Your Name" required><br>
+        <input type="email" name="email" placeholder="Your Email" required><br>
+        <textarea name="complaint" placeholder="Describe your complaint" required></textarea><br>
+        <button type="submit">Submit</button>
+    </form>
+    <form action="/handle_technical_issue" method="post">
+        <h2>Report a Technical Issue</h2>
+        <input type="text" name="name" placeholder="Your Name" required><br>
+        <input type="email" name="email" placeholder="Your Email" required><br>
+        <textarea name="description" placeholder="Describe the issue" required></textarea><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
