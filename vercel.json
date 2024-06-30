@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "builds" [
+  "builds" :[
     {"source": "chat.py", "use": "@vercel/python"}
   ],
   
