@@ -1,5 +1,4 @@
 {
-  
   "routes": [
     { "source": "/(.*)", "destination": "/api/chat" }
   ]
